@@ -1,0 +1,58 @@
+Trees vs Binary Tree 
+
+	In Tree, node can have more than 2 children
+	In Binary Tree, node has up to 2 children not more than two.
+	
+Binary Tree vs Binary Search Tree
+
+	Binary search tree is a binary tree in which every node fits a specific ordering:
+	all left nodes <= n < all right nodes
+	
+Balanced vs Unbalanced
+	
+	Balanced tree doesn't mean that the left and right subtrees are exactly the same. "Balanced" mean something like
+	"not terribly imbalanced". It's balance enough to ensure O(logn) time for insert and search. Red-black and AVL tree is 
+	example of balance tree.
+
+Complete Binary Tree
+	
+	complete binary tree is binary tree in which every level of tree is full filled, except last level. To extend that the last
+	level is filled, it is filled left to right.
+	
+Example:
+
+	(Not complete binary tree because left side of 20 is empty)
+		10
+		/\
+	   5  20
+	  /\   \
+	 3  7   30
+	 
+	(A complete binary tree: Although node 20 doesn't have right node)
+		10
+		/ \
+	   5   20
+	  /\   /
+	 3  7 15
+	 
+Full Binary Trees
+
+	It is a binary tree in which every node has either zero or two children. No node have one child.
+	
+Perfect Binary Trees
+
+	It is a combination of Complete and Full Binary tree. 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

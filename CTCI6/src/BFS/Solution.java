@@ -43,7 +43,7 @@ public class Solution {
     }
     
     public static int BFS(Graph g, int root, int target){
-    	//LinkedList<Integer> current = new LinkedList<Integer>zzzzzzzzzzzzzz
+    	//LinkedList<Integer> current = new LinkedList<Integer>
         LinkedList<Integer> nextVisit = new LinkedList<Integer>();
         HashSet<Integer> visited = new HashSet<Integer>();
         nextVisit.add(root);

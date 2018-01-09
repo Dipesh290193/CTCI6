@@ -3,3 +3,6 @@ bin
 .*
 !.gitignore
 *.iml
+Servers
+.idea/
+/*.iml/

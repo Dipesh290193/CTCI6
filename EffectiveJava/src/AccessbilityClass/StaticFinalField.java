@@ -6,7 +6,7 @@ import java.util.List;
 
 public class StaticFinalField{
 
-	//Never do this because MOTHS object is immuatable but Integer is mutable so any one can change the values from MONTHS.
+	//Never do this because MONTHS object is immuatable but Integer is mutable so any one can change the values from MONTHS.
 	public static final Integer[] MONTHS = {2,5,7,9};
 	
 	// Fix of above problem 

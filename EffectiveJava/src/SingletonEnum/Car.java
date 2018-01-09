@@ -6,7 +6,7 @@ public enum Car {
 	
 	private Car(){
 		
-	}	
+	}
 	
 	private String color;
 	private boolean isStarted;

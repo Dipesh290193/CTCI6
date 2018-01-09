@@ -22,7 +22,7 @@ public class Main {
 			System.out.println(cLib*city);
 		}
 		else{
-		System.out.println(findMinCost(g, cLib, cRoad));
+			System.out.println(findMinCost(g, cLib, cRoad));
 		}
 	}
 	

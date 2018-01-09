@@ -4,7 +4,7 @@ public class TripleStep {
 
 	public static void main(String args[])
 	{
-		System.out.println(steps(10));
+		System.out.println(steps(2));
 	}
 	
 	
@@ -17,7 +17,10 @@ public class TripleStep {
 	}
 	private static int steps(int n, int[] count)
 	{
-		if(n == 0 || n == 1)
+		if(n < 0){
+			return 0;
+		}
+		if(n == 0)
 		{
 			return 1;
 		}

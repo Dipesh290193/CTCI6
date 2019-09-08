@@ -4,8 +4,8 @@ public class SearchInRotatedArray {
 
 	public static void main(String args[])
 	{
-		int[] array = {15,16,19,20,25,1,3,4,5,7,10,14};
-		System.out.println(search(array,21));
+		int[] array = {1,3};
+		System.out.println(search(array,3,0, array.length-1));
 	}
 	
 	public static int search(int[] array, int value)
@@ -79,6 +79,35 @@ public class SearchInRotatedArray {
 				if(result == -1)
 					return modifyBinarySearch(a, mid+1, end, value);
 				return result;
+			}
+		}
+		return -1;
+	}
+
+	public static int search(int[] nums, int target, int start, int end)
+	{
+		if(start > end){
+			return -1;
+		}
+		int mid =(start + end ) /2 ;
+		if(nums[mid] == target)
+			return mid;
+		else if(nums[start] < nums[mid])
+		{
+			if(nums[start] <= target && nums[mid] > target)
+				return search(nums, target, start, mid-1);
+			else
+				return search(nums, target, mid+1, end);
+		}
+		else if(nums[start] > nums[mid])
+		{
+			if(target > nums[mid] && target <= nums[end])
+			{
+				return search(nums, target,mid+1, end);
+			}
+			else
+			{
+				return search(nums, target ,start, mid-1);
 			}
 		}
 		return -1;
